@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= (typeof title != "undefined" ? title : "") %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!--====form section start====-->
+    <div class="wrapper">
+      <div class="user-detail">
+          <h2>Input Content & MKSA</h2>
+          <form action="/article/create" method="POST">
+                <label>Content forming</label>
+                <input type="text" placeholder="Enter Content" name="article" required>
+                <label>MKSA forming</label>
+                <input type="text" placeholder="Enter MKSA" name="mksa" required>
+                <button type="submit">Submit</button>
+          </form>
+          
+      </div>
+      <div>
+        <table >
+          <% articleData.forEach(data => { %>
+              <p><%= data.article %> this</p> 
+              <p><%= data.mksa %> this</p>
+              <% }) %>
+      </table>
+      </div> 
+      <a href="/article/list">data list</a> 
+    </div>
+    <!--====form section start====-->
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= (typeof title != "undefined" ? title : "") %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="table-data" id="table">
+        <h2>Display Data using Node.js & MySQL</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.N</th>
+                        <th>article</th>
+                        <th>mksa</th>
+                 
+                    </tr>
+                </thead>
+                <tbody>
+                <%
+                if(ArticleData.length!=0){
+                var i=1;
+                ArticleData.forEach(function(data){
+                %>
+
+                <tr>
+                    <td><%=i; %></td>
+                    <td><%=data.article %></td>
+                    <td><%=data.mksa %></td>
+                    
+                <%  i++; }) %>
+                <% } else{ %>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                <% } %>
+            </tbody>
+            </table>
+        </div>
+        <a href="/">home</a> 
+    </div>
+
+</body>
+</html>
