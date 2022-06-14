@@ -1,6 +1,6 @@
 {
-  "name": "nodeapp",
-  "version": "0.0.0",
+  "name": "pe4capstone",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -20,5 +20,20 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "description": "this is the website",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferytell/nodeJs_express_mySql_mix1.git"
+  },
+  "keywords": [
+    "nodeJs"
+  ],
+  "author": "ferytell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferytell/nodeJs_express_mySql_mix1/issues"
+  },
+  "homepage": "https://github.com/ferytell/nodeJs_express_mySql_mix1#readme"
 }
