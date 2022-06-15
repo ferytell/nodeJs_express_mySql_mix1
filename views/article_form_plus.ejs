@@ -12,7 +12,7 @@
           <h2>Input Content & MKSA</h2>
           <form action="/article/create" method="POST">
                 <label>Content forming</label>
-                <input type="text" placeholder="Enter Content" name="article" required>
+                <textarea placeholder="Enter Content" name="article" required></textarea>
                 <label>MKSA forming</label>
                 <input type="text" placeholder="Enter MKSA" name="mksa" required>
                 <button type="submit">Submit</button>
@@ -20,10 +20,14 @@
           
       </div>
       <div>
-        <table >
+        <table class="results" >
           <% articleData.forEach(data => { %>
-              <p><%= data.article %> this</p> 
-              <p><%= data.mksa %> this</p>
+              <h4>Content :</h4>
+              <p><%= data.article %></p>
+              <h4> MK;SA :</h4> 
+              <p><%= data.mksa %></p>
+              <h4>Score</h4>
+
               <% }) %>
       </table>
       </div> 
