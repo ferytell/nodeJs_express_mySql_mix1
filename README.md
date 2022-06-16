@@ -15,6 +15,13 @@
 |   Tri Rizki Yuliawan        | C7013F1361 |  Machine learning  | Machine Learning Developer      |     [LinkedIn - Tri]    or [Github - Tri]       |
 
 
+# How to run it locally?
+- clone this using https://github.com/ferytell/nodeJs_express_mySql_mix1
+- npm install
+- npm run start
+-
+
+
 # About MKSA Checker
 
 Mk:SA checker is quality checker for MKSA
